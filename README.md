@@ -5,3 +5,5 @@ Learning Plan
 - Embedded Systems: With ARM Cortex M Microcontrollers in Assembly Language and C (Selected Chapters)
 - Hands-On RTOS with Mircocontrollers (Selected Chapters)
 - Linux System Programming Techniques (Selected Chapters)
+- Beej's Guide to Network Programming Using Internet Sockets
+- The C Programming Languafge
