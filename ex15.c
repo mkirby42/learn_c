@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[])
+int main(void)
 {
 	// Crate two arrays we care about
 	int ages[] = { 23, 43, 12, 89, 2 };
