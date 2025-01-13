@@ -25,8 +25,14 @@
 #define log_info(M, ...) fprintf(stderr, "[INFO] (%s:%d) " M "\n",\
     __FILE__, __LINE__, ##__VA_ARGS__)
 
-#define check(A, M, ...) if(!(A)) {\
-    log_err(M, ##__VA_ARGS__); errno=0; goto error; }
+#define check(A, M, ...) \
+    do { \
+        if(!(A)) { \
+            log_err(M, ##__VA_ARGS__); \
+            errno = 0; \ 
+            goto error; \
+        } \
+    } while (0)
 
 #define sentinel(M, ...) { log_err(M, ##__VA_ARGS__);\
     errno=0; goto error; }
