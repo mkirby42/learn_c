@@ -56,7 +56,7 @@ int read_scan(const char *fmt, ...)
             i++;
             switch (fmt[i]) {
                 case '\0':
-                    sentinel("Invalud format you ended with %%.");
+                    sentinel("Invalid format you ended with %%.");
                     break;
 
                 case 'd':
